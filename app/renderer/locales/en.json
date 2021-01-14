@@ -1,0 +1,97 @@
+{
+  "Info": {
+    "Connection": {
+      "State": {
+        "Title": "Status",
+        "Safe": "Safe",
+        "UnSafe": "Unsafe",
+        "NotConnected": "Not connected",
+        "NetworkError": "Network error"
+      },
+      "Safe": "Your connection is safe",
+      "UnSafe": "Your connection is not safe",
+      "NotConnected": "You are not connected"
+    }
+  },
+  "Notifications": {
+    "LatestIP": {
+      "FetchError": {
+        "Title": "Error in getting IP info",
+        "Message": "There is an error in getting IP info"
+      }
+    },
+    "IPChange": {
+      "Title": "New IP address detected",
+      "Message": "Your IP address is {{IP}}\n{{city}}, {{country}}"
+    }
+  },
+  "Lists": {
+    "Messages": {
+      "ItemEdited": "Item edited successfully.",
+      "ItemDeleted": "Item deleted successfully.",
+      "ItemAdded": "Item added successfully."
+    }
+  },
+  "Windows": {
+    "Titles": {
+      "Home": "FireFlight",
+      "Settings": "Settings",
+      "StoredIPs": "FireFlight"
+    }
+  },
+  "General": {
+    "Items": "{{count}} Item",
+    "Items_plural": "{{count}} Items",
+    "SecondLoop": "{{count}} Second loop",
+    "SecondLoop_plural": "{{count}} Seconds loop"
+  },
+  "StoredIPs": {
+    "List": {
+      "Actions": {
+        "RemoveItem": "Remove from connection history",
+        "AllowItem": "Add to allowed list"
+      }
+    }
+  },
+  "Settings": {
+    "Form": {
+      "Messages": {
+        "Saved": "Your changes is saved."
+      },
+      "Fields": {
+        "isEnabled": {
+          "Title": "Enable firewall",
+          "Extra": "Enable kill switch functionality. You can also pause kill switch for for a specified time in main window."
+        },
+        "openOnSystemStart": {
+          "Title": "Open on system start",
+          "Extra": "Enabling this option allows to activate the kill switch automatically when your computer is turned on."
+        },
+        "runInMenubar": {
+          "Title": "Run in menubar",
+          "Extra": "Show application only in menubar Instead of displaying window. Your current IP is displayed on the menubar only when menubar is enabled. "
+        },
+        "allowPrivateIPs": {
+          "Title": "Allow private IP addresses",
+          "Extra": "These addresses are commonly used for local area networks (LANs) in residential, office, and enterprise environments."
+        },
+        "newIPNotification": {
+          "Title": "Notify on IP change",
+          "Extra": "Show a notification box when new IP address is detected."
+        },
+        "enableAnalytics": {
+          "Title": "Share usage statistics",
+          "Extra": "Allow this application to collect advanced analytics and crash reports to improve the application experience and stability."
+        },
+        "storedItemsCount": {
+          "Title": "Maximum log items",
+          "Extra": "Maximum items of connected IP addresses to save."
+        },
+        "interval": {
+          "Title": "IP check interval",
+          "Extra": "The amount of time that it takes to get your IP address and lets you know if it changed."
+        }
+      }
+    }
+  }
+}

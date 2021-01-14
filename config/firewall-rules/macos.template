@@ -1,0 +1,19 @@
+# Options
+set block-policy drop
+set ruleset-optimization basic
+set skip on lo0
+
+# Interfaces
+vpn_intf = "{utun0 utun1 utun2 utun3 utun4 utun5 utun6 utun7 utun8 utun9 utun10 ipsec0 ipsec1 ipsec2 ipsec3 ipsec4 ipsec5 ipsec6 ipsec7 ipsec8 ipsec9 ipsec10 p2p0 p2p1 p2p2 p2p3 p2p4 p2p5 p2p6 p2p7 p2p8 p2p9 p2p10}"
+
+# Block all outgoing packets
+block out all
+
+# Antispoof protection
+antispoof for $vpn_intf
+
+# Allow outgoing packets to specified IPs only
+%__IP_ADDRESSES_RULES__%
+
+# Allow traffic for VPN interfaces
+pass out on $vpn_intf all
